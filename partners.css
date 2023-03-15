@@ -1,0 +1,77 @@
+.partners {
+    margin: 25px 0;
+}
+.partners__items {
+    display: grid;
+    gap: 15px;
+}
+.partners__item {
+    box-shadow: 0px 0px 10px 2px var(--popular);
+    transition: all linear 0.2s;
+}
+.partners__item:hover {
+    transform: translateX(5px);
+}
+.partners__suptitle {
+    color: var(--red-text);
+    font-size: 22px;
+}
+.partners__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.partners__title:hover {
+    color: var(--red-text);
+}
+.partners__img {
+    display: none;
+    width: 100%;
+}
+.partners__text {
+    padding: 15px;
+}
+.partners__btn {
+    padding: 20px;
+}
+@media (min-width: 460px) {
+    .main-facts__items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-facts__item:last-child {
+        grid-column: 2 span;
+    }
+    .partners__item:hover {
+        transform: translateY(-5px);
+    }
+    
+}
+@media (min-width: 769px) {
+    .partners__img {
+        display: block;
+    }
+    .schools__items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .partners__item {
+        grid-column: 2 span;
+    }
+    .partners__btn {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+@media (min-width: 900px) {
+    .main-facts__items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main-facts__item:last-child {
+        grid-column: 1 span;
+    }
+    .main-facts {
+        padding: 80px 0;
+    }
+    .partners {
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,114 @@
+.admissions {
+    background-color: #A69400;
+    padding: 25px 0;
+}
+
+.admissions__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admissions__title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.admissions__btn {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 12px 10px;
+}
+
+.admissions-schools {
+    margin: 20px 0;
+}
+
+.admissions-schools__inner {
+    display: grid;
+    gap: 20px;
+}
+
+.admissions-schools__block {
+    padding: 15px 15px;
+    box-shadow: 0px 0px 10px 2px var(--popular);
+    display: grid;
+    gap: 10px;
+}
+
+.admissions-schools__title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.admissions-schools__subtitle {
+    color: var(--gray);
+    font-size: 18px;
+}
+
+.admissions-schools__items {
+    display: grid;
+    gap: 12px;
+}
+
+.admissions-schools__item {
+    color: var(--blue);
+    font-size: 18px;
+    transition: all linear 0.2s;
+}
+
+.admissions-schools__item:hover {
+    text-decoration: underline;
+}
+
+.admissions-schools__item span {
+    color: var(--blue);
+}
+
+@media (min-width: 900px) {
+    .admissions-schools__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+    .admissions, 
+    .admissions-schools {
+        padding: 40px 0;
+    }
+}
+.admissions-schools__items {
+    display: grid;
+    gap: 12px;
+}
+
+@media (min-width: 600px) {
+    .schools__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .facts__items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .facts__item {
+        grid-column: 2 span;
+    }
+    .facts__btn {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+@media (min-width: 1025px) {
+    .schools__items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .facts__item {
+        grid-column: 1 span;
+    }
+    .facts,
+    .schools {
+        padding: 50px 0;
+    }
+    .about-info {
+        padding: 40px 0;
+    }
+}
