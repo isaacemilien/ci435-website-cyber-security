@@ -25,3 +25,13 @@
     list-style-position: inside;
     padding-left: 0;
   }
+
+  .banner {
+    background-color: orange;
+  }
+
+  nav li{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
